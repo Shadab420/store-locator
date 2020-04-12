@@ -11,14 +11,56 @@ body {
     height: 100%;
 }
 
+#showStoreLocatorBtn {
+    position: absolute;
+    z-index: 1000;
+    font-size: 14px;
+    color: white;
+    background-color: #0a0a42;
+    text-transform: uppercase;
+    top: 80px;
+    left: 100px;
+    width: 400px;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#showStoreLocatorBtn:focus, #hideStoreLocatorBtn:focus{
+    outline: 0;
+}
+
+#hideStoreLocatorBtn{
+    position: absolute;
+    z-index: 1000;
+    font-size: 14px;
+    color: white;
+    background-color: #f14747;
+    text-transform: uppercase;
+    top: 80px;
+    left: 100px;
+    width: 400px;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+#store-locator{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+
 .title {
     position: absolute;
     z-index: 1000;
-    font-size: 55px;
+    font-size: 45px;
     font-weight: bold;
     color: #333;
     text-transform: uppercase;
-    top: 100px;
+    top: 135px;
     left: 100px;
 }
 
@@ -32,6 +74,13 @@ body {
     width: 400px;
     border-radius: 30px;
     display: flex;
+    opacity: 0.6;
+    transition: 0.5s all ease-in-out;
+}
+
+.search-container:hover{
+    transform: scale(1.2);
+    opacity: 1;
 }
 
 .search-container .search {
@@ -56,23 +105,49 @@ body {
 
 .search i {
     font-size: 25px;
-    color: white;
+    color: #fff;
+    background-color: rgb(109, 156, 22);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
     cursor: pointer;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search i:hover {
+    background-color: #3e8e41;
+}
+
+.search i:active{
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 .stores-list-container {
     width: 400px;
     position: absolute;
     z-index: 1000;
-    background: white;
-    left: 100px;
+    background-color: #0a0a42;    left: 100px;
     top: 300px;
     bottom: 20px;
     border-radius: 30px;
     display: flex;
     overflow-y: hidden;
     padding-bottom: 30px;
+    opacity: 0.8;
+    transition: 1s all ease-in-out;
 }
+
+.stores-list-container:hover{
+    opacity: 1;
+}
+
+
 
 .stores-list-container .stores-list{
     padding-left: 20px;
@@ -82,6 +157,7 @@ body {
 .store-container{
     border-bottom: 1px solid #979797;
     display: flex;
+    cursor: pointer;
 }
 
 .store-container i{
@@ -98,7 +174,7 @@ body {
 
 .store-address {
       font-size: 21px;
-      color: #514C4C;
+      color: #c1934d;;
       margin-top: 30px;
 }
 
@@ -107,7 +183,7 @@ body {
 }
 
 .store-phone-number{
-    color: #B5ADAD;
+    color: #B5A;
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -135,4 +211,58 @@ body {
     overflow-y: scroll;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+
+.store-info-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.7);
+}
+
+.store-info-status {
+    margin-top: 6px;
+    border-bottom: 1px solid #00000029;
+    padding-bottom: 6px;
+}
+
+.store-info-address, .store-info-phone {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+
+}
+
+.store-info-address .circle, .store-info-phone .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1985a1;
+    color: white;
+    margin-right: 8px;
+}
+
+.search i {
+    cursor: pointer;
+}
+
+.store-container-background {
+    display: flex;
+    flex-grow: 1;
+    padding: 0 8px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    border-radius: 8px;
+    transition: 0.3s all ease-in-out;
+}
+
+.store-container-background:hover{
+    
+    
+    background-color: rgb(204, 253, 246)
+    
+    
 }

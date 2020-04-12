@@ -12,14 +12,28 @@
 
 - Add Store list container -> DONE
 
+
+- DAY-2
+
 - Add individual store container -> Done
 
 - Style the individual store item in the stores list -> Done
 
 - show all the stores in the stores list based on real world data -> done
 
-- show the marker based on real world store data
+- show the marker based on real world store data -> done
 
-- MAYBE: show the info window when you click on individual store
+- MAYBE: show the info window when you click on individual store -> done
 
-- MAYBE: Add a beautiful transition on the hover of the individual store
+
+- DAY-3
+
+- complete the styles for the marker info window -> Done
+
+- Open the info window marker on store selection in stores list -> Done
+
+- Allow a user to search for the stores in  a zip code -> Done
+
+- Add a beautiful transition on the hover of an individual store
+
+- - - DONE ---

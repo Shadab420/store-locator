@@ -7,24 +7,29 @@
     </head>
 
     <body>
+        <div id="store-locator">
 
-        <div class="title">Store Locator</div>
+            <div class="title">Store Locator</div>
 
-        <div class="search-container">
-            <div class="search">
-                <input type="text" id="zip-code-input" placeholder="Enter Zipcode"/>
-                <i class="fas fa-search"></i>
+            <div class="search-container">
+                <div class="search">
+                    <input type="text" id="zip-code-input" placeholder="Enter Zipcode"/>
+                    <i class="fas fa-search" onclick="searchStores()"></i>
+                </div>
             </div>
-        </div>
 
-        <div class="stores-list-container">
-            <div class="stores-list">
+            <div class="stores-list-container">
+                <div class="stores-list">
+                        
+                    
                     
                 
-                
-               
+                </div>
             </div>
+            <button id="hideStoreLocatorBtn">Click me to see the store locator!</button>
         </div>
+
+        <button id="showStoreLocatorBtn">Click me to see the store locator!</button>
 
         <div id="map"></div>
 
